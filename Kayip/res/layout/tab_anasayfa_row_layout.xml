@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/noimage"/>
+ 
+    </LinearLayout>
+ 
+    <!-- Ozellikler-->
+
+    <TextView
+        android:id="@+id/tv_anasayfa_row_ozellikler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/aciklama"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+ 
+    <!-- Kayip turu -->
+    <TextView
+        android:id="@+id/tv_anasayfa_row_kayipturu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tv_anasayfa_row_iletisim"
+        android:gravity="right"
+        android:text="Kayip türü"
+        android:layout_marginRight="5dip"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+     <!-- Tarih -->
+      <TextView
+        android:id="@+id/tv_anasayfa_row_tarih"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_anasayfa_row_ozellikler"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:text="Tarih"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"/>  
+    <!-- Yer -->
+
+      <TextView
+        android:id="@+id/tv_anasayfa_row_yer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_anasayfa_row_tarih"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:text="Yer"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"/>
+      <!-- İletisim -->
+    
+      <TextView
+        android:id="@+id/tv_anasayfa_row_iletisim"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_anasayfa_row_yer"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:text="İletisim"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"/>
+    
+    <!-- İlan turu -->
+    <TextView
+        android:id="@+id/tv_anasayfa_row_ilanturu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_anasayfa_row_ozellikler"
+        android:gravity="right"
+        android:text="İlan türü"
+        android:layout_marginRight="5dip"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+ 
+     <!-- Rightend Arrow -->
+     <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/arrow"
+        
+        />
+
+
+ 
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/Antique_White">
+
+<ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+        
+            
+<ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/noimage" />
+
+<Spinner
+    android:id="@+id/spnr_kayipturu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/txtkayipturu" />
+
+<TextView
+    android:id="@+id/txtkayipturu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/spnr_kayipturu"
+    android:layout_below="@+id/spnr_ilanturu"
+    android:background="@drawable/edittext_bottom_bg"
+    android:text="@string/kayipturu" />
+
+<Button
+    android:id="@+id/btn_iptal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/btn_kaydet"
+    android:layout_alignBottom="@+id/btn_kaydet"
+    android:layout_alignRight="@+id/spnr_kayipturu"
+    android:background="@drawable/button_default_bg"
+    android:text="@string/iptal" />
+
+<Button
+    android:id="@+id/button_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/btn_kaydet"
+    android:layout_alignTop="@+id/imageView1"
+    android:background="@drawable/button_default_bg"
+    android:drawableLeft="@drawable/action_search"
+    android:text="@string/resimsec" />
+
+<TextView
+    android:id="@+id/txt_ilanturu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/spnr_ilanturu"
+    android:layout_below="@+id/imageView1"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/edittext_bottom_bg"
+    android:text="@string/ilanturu" />
+
+<Spinner
+    android:id="@+id/spnr_ilanturu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/txtkayipturu"
+    android:layout_below="@+id/txt_ilanturu" />
+
+<EditText
+    android:id="@+id/etTarih"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/spnr_kayipturu"
+    android:layout_below="@+id/spnr_kayipturu"
+    android:background="@drawable/edittext_top_bg"
+    android:ems="10"
+    android:hint="@string/tarih"
+    android:inputType="date" />
+
+<EditText
+    android:id="@+id/etYer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/etTarih"
+    android:layout_below="@+id/etTarih"
+    android:layout_marginTop="18dp"
+    android:background="@drawable/edittext_top_bg"
+    android:ems="10"
+    android:hint="@string/yer" />
+
+<EditText
+    android:id="@+id/etIletisim"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/etOzellikler"
+    android:layout_below="@+id/etOzellikler"
+    android:layout_marginTop="18dp"
+    android:background="@drawable/edittext_top_bg"
+    android:ems="10"
+    android:hint="@string/iletisimbilgileri"
+    android:inputType="textMultiLine" />
+
+<EditText
+    android:id="@+id/etOzellikler"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/etYer"
+    android:layout_below="@+id/etYer"
+    android:layout_marginTop="18dp"
+    android:background="@drawable/edittext_top_bg"
+    android:ems="10"
+    android:hint="@string/aciklama"
+    android:inputType="textMultiLine" />
+
+<Button
+    android:id="@+id/btn_kaydet"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/etIletisim"
+    android:layout_below="@+id/etIletisim"
+    android:layout_marginTop="14dp"
+    android:background="@drawable/button_default_bg"
+    android:text="@string/kaydet" />
+            
+</RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

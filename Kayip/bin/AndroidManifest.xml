@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yay.kayip_v2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.CAMERA" />
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		 
+		<uses-feature android:name="android.hardware.camera" />
+		<uses-feature android:name="android.hardware.camera.autofocus" />
+    
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.yay.kayip_v2.Activity_Giris"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.yay.kayip_v2.Activity_Kayit"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.yay.kayip_v2.ACTIVITYKAYIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>    
+        
+        <activity
+            android:name="com.yay.kayip_v2.Tablar"
+            android:label="@string/app_name" >
+           <intent-filter>
+                <action android:name="com.yay.kayip_v2.TABLAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+
+        </activity>
+        
+        <activity
+            android:name="com.yay.kayip_v2.Activity_Tab_Anasayfa"
+            android:label="@string/app_name" >
+           <intent-filter>
+                <action android:name="com.yay.kayip_v2.ACTIVITYTABANASAYFA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+
+        </activity>
+
+        <activity
+            android:name="com.yay.kayip_v2.Activity_Tab_IlanVer"
+            android:label="@string/app_name" >
+           <intent-filter>
+                <action android:name="com.yay.kayip_v2.ACTIVITYTABILANVER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+
+        </activity>
+        
+        <activity
+            android:name="com.yay.kayip_v2.Activity_Tab_Profil"
+            android:label="@string/app_name" >
+           <intent-filter>
+                <action android:name="com.yay.kayip_v2.ACTIVITYTABPORFIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        <activity
+            android:name="com.yay.kayip_v2.Profil_Ozellestir"
+            android:label="@string/app_name" >
+           <intent-filter>
+                <action android:name="com.yay.kayip_v2.PROFILOZELLESTIR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>       
+        
+        
+    </application>
+
+</manifest>
