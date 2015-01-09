@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editIsim"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="İsim"
+        android:textSize="25sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonTarih"
+        android:layout_marginTop="25dp" >
+
+        <TextView
+            android:id="@+id/textSaat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Saat"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textDk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="20dp"
+            android:text="Dakika" 
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSaat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonTarih"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:onClick="onClickControl"
+        android:text="Saat Seç"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonTarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:onClick="onClickControl"
+        android:text="Tarih Seç"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editIsim"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textGun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Gün"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textAy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Ay"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textYil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Yıl"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonEkle"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/switchBildirim"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickControl"
+        android:text="EKLE"
+        android:textSize="25sp"/>
+
+    <Switch
+        android:id="@+id/switchBildirim"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonSaat"
+        android:text="Bildirim"
+        android:textOff="Alma"
+        android:textOn="Al"
+        android:textSize="25sp" />
+
+</RelativeLayout>

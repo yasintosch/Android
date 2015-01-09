@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnKaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:text="Kaydet" />
+
+    <EditText
+        android:id="@+id/et_Sinif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_OkulNo"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Sınıf" />
+
+    <EditText
+        android:id="@+id/et_Bolum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_Sinif"
+        android:layout_alignLeft="@+id/et_Sinif"
+        android:ems="10"
+        android:hint="Bölüm" />
+
+    <EditText
+        android:id="@+id/et_OkulNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_Bolum"
+        android:layout_alignLeft="@+id/et_Adi"
+        android:ems="10"
+        android:hint="Ögrenci okul numarası" />
+
+    <EditText
+        android:id="@+id/et_Adi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_OkulNo"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Ögrenci adı" />
+
+</RelativeLayout>

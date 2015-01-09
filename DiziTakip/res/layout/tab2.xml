@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg_tab2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/buttonUygula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Uygula"
+        android:textSize="20sp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonUygula"
+        android:max="255"/>
+
+    <TextView
+        android:id="@+id/textArkaplanDeger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonUygula"
+        android:layout_alignBottom="@+id/buttonUygula"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="160"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textArkaplanDeger"
+        android:layout_alignBottom="@+id/textArkaplanDeger"
+        android:layout_alignParentLeft="true"
+        android:text="Arkaplan Şeffaflığı: "
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinnerSil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBar1"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/buttonSil" />
+
+    <Button
+        android:id="@+id/buttonSil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonUygula"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/spinnerSil"
+        android:text="Sil"
+        android:textSize="20sp" />
+
+</RelativeLayout>
